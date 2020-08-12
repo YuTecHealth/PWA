@@ -1,4 +1,4 @@
-function bleconnect(){
+function bleconnectfunc(){
 navigator.bluetooth.requestDevice({
     optionalServices: [0xa000],
     //'713d0002-503e-4c75-ba94-3148f18d941e'
