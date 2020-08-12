@@ -13,9 +13,9 @@
             "sizes": "512x512"
         }
     ],
-    "start_url": "./?utm_source=web_app_manifest",
+    "start_url": "LAB3.html",
     "background_color": "#FFD1EA",
     "display": "standalone",
     "theme_color": "#FFD1EA",
-    "description": "LAB3
+    "description": "LAB3"
 }
