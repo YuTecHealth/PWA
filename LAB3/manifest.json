@@ -3,12 +3,12 @@
     "name": "YuTech_PWA_LAB3",
     "icons": [
         {
-            "src": "title.png",
+            "src": "title0.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "title.png",
+            "src": "title1.png",
             "type": "image/png",
             "sizes": "512x512"
         }
