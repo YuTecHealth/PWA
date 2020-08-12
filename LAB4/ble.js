@@ -30,3 +30,5 @@ navigator.bluetooth.requestDevice({
         });
     })
 })
+.catch(error => {console.log(error)});
+};
