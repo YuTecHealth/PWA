@@ -1,0 +1,21 @@
+{
+    "short_name": "LAB3",
+    "name": "YuTech_PWA_LAB3",
+    "icons": [
+        {
+            "src": "title.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "title.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "./?utm_source=web_app_manifest",
+    "background_color": "#FFD1EA",
+    "display": "standalone",
+    "theme_color": "#FFD1EA",
+    "description": "LAB3"
+}
