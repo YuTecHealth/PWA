@@ -6,9 +6,9 @@ navigator.bluetooth.requestDevice({
 })
 .then(device => {
     console.log(device);
-      bluetoothDevice = device;
-      bluetoothDevice.addEventListener('gattserverdisconnected', onDisconnected);
-      return device.gatt.connect();
+    bluetoothDevice = device;
+    bluetoothDevice.addEventListener('gattserverdisconnected', onDisconnected);
+    return device.gatt.connect();
 })
 .then(server => {
     return server.getPrimaryService(0xa000);
