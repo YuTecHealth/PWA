@@ -19,14 +19,8 @@ navigator.bluetooth.requestDevice({
 })
 .then(chara => {
     console.log(chara);
-    let lock = true;
     chara.startNotifications().then(c => {
         c.addEventListener('characteristicvaluechanged', function(e){
-           let ecgfromble = Array.from(new Uint8Array(this.value.buffer));
-           ecgfromble.forEach(ecgchart);
-         //  ecgchart(ecgfromble[1]);
-        // smoothie.addTimeSeries(line1);
-
         });
     })
 })
