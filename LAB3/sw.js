@@ -14,6 +14,3 @@ workbox.routing.registerRoute(
     cacheName: 'image-cache'
   })
 );
-~
-~
-~
