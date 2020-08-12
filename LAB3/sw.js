@@ -14,3 +14,8 @@ workbox.routing.registerRoute(
     cacheName: 'image-cache'
   })
 );
+// 網路優先
+workbox.routing.registerRoute(
+  new RegExp('.*\.js'),
+  workbox.strategies.networkFirst()
+);
