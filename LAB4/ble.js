@@ -7,7 +7,7 @@ navigator.bluetooth.requestDevice({
 .then(device => {
     console.log(device);
     bluetoothDevice = device;
-    bluetoothDevice.addEventListener('gattserverdisconnected', onDisconnected);
+    bluetoothDevice.addEventListener('gattserverdisconnected', disconnected);
     return device.gatt.connect();
 })
 .then(server => {
@@ -26,3 +26,8 @@ navigator.bluetooth.requestDevice({
 })
 .catch(error => {console.log(error)});
 };
+function disconnected(event) {
+      console.log("Disconnected by remote device!");
+      bluetoothDevice = null;
+      connected = false;
+}
