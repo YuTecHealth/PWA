@@ -1,20 +1,3 @@
-import * as myModule from 'smoothie.js';
-smoothie = new SmoothieChart();
-var timeconstant=0;
-smoothie.streamTo(document.getElementById("mycanvas"));
-var line1 = new TimeSeries();
-
-function ecgchart(input_value){
-
-// Add a random value to each line every second
-line1.append(new Date().getTime(), input_value);
-timeconstant=timeconstant+1;
-if(timeconstant%40==0){
-    smoothie.addTimeSeries(line1);
-   }
-// Add to SmoothieChart new Date().getTime()
-}
-
 function bleconnectfunc(){
 navigator.bluetooth.requestDevice({
     optionalServices: [0xa000],
