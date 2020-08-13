@@ -18,7 +18,8 @@ navigator.bluetooth.requestDevice({
     return service.getCharacteristic(0xa001);
 })
 .then(chara => {
-    console.log(chara);
+    console.log(chara); 
+    console.log('connected');
     chara.startNotifications().then(c => {
         c.addEventListener('characteristicvaluechanged', function(e){
         });
