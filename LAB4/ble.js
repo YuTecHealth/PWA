@@ -25,7 +25,7 @@ navigator.bluetooth.requestDevice({
         });
     })
 })
-.catch(error => {console.log(error)});
+.catch(error => {console.log(error.message)});
 };
 function disconnected(event) {
       console.log("Disconnected by remote device!");
