@@ -1,4 +1,4 @@
-import { new SmoothieChart } from 'smoothie.js';
+import * as myModule from 'smoothie.js';
 smoothie = new SmoothieChart();
 var timeconstant=0;
 smoothie.streamTo(document.getElementById("mycanvas"));
